@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
     
     let titleScreen = "MovieApp"
     let sizeFontTitle = 23
-    let rowHeight = 120
+    let rowHeight = 230
     let deadLineAvarage = 6.0
     let titleAlert = "Alert"
     let messageAlert = "The movie don't have quality sufficient"
@@ -29,6 +29,7 @@ class HomeViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        viewModel.fetchListGenres()
     }
     
     override func viewDidLoad() {
