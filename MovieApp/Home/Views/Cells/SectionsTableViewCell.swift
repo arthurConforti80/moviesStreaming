@@ -58,7 +58,7 @@ class SectionsTableViewCell: UITableViewCell {
         collectionView.dataSource = self
         collectionView.register(MoviesCollectionViewCell.self, forCellWithReuseIdentifier: "MoviesCollectionViewCell")
         let layout = UICollectionViewFlowLayout()
-        layout.itemSize = CGSize(width: 128, height: 80)
+        layout.itemSize = CGSize(width: 80, height: 120)
         layout.scrollDirection = .horizontal
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
     }
